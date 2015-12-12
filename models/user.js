@@ -5,5 +5,6 @@ module.exports = mongoose.model('User', {
     password: String,
     email: String,
     displayName: String,
-    facebookId: Number
+    facebookId: Number,
+    openId: Number
 });
