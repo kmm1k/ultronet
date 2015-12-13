@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    div.container
+        div.row
+            div.col-sm-6.col-md-4.col-md-offset-4
+                h1.text-center.login-title welcome to profile page
+                    div.account-wall
+                        #{user.facebook.token}
+
+                        a(href='/connect/local', class='text-center new-account')  add a password to account!
+                         br
+                        a(href='/unlink/local', class='text-center new-account')  unlink account!
+                        br
+
+                        a(href='/connect/facebook', class='text-center new-account')  add facebook account to this account!
+                        br
+                        a(href='/unlink/facebook', class='text-center new-account')  remove facebook account from this account!
+
